@@ -10,10 +10,10 @@ namespace Notes_App.ViewModel
 {
     public class DatabaseHelper
     {
-        //dbFile will save in current Directory of the sortware so you can easily will it(Tuong)
+        //dbFile will save in current Directory of the sortware so you can easily to access it(Tuong)
         private static string dbFile = Path.Combine(Environment.CurrentDirectory, "noteDB.db3");
         //using static so we can easily access it without having create an instance of the database helper class (Tuong)
-        //<T> is generic method
+        //<T> is generic method. We can use it do insert, update or delete many kind of thing like string, object, date.... (Tuong)
         public static bool Insert<T>(T item)
         {
             bool result = false;

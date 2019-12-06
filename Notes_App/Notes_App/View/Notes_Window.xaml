@@ -4,9 +4,27 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Notes_App.View"
+        xmlns:vm="clr-namespace:Notes_App.ViewModel"
         mc:Ignorable="d"
         Title="Notes_Window" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <Window.Resources>
+        <vm:Note_ViewModel x:Key="vm"/>
+    </Window.Resources>
+    <DockPanel DataContext="{StaticResource vm}">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File" >
+                <MenuItem Header="New Notebook"
+                          Command="{Binding New_Notebook_Command}"/>
+                <MenuItem Header="New Note"
+                          Command="{Binding New_Note_Command}"
+                          CommandParameter="{Binding Selected_Notebook}"/>
+                <Separator/>
+                <MenuItem Header="Exit"
+                          Click="MenuItem_Click"/>
+            </MenuItem>
+        </Menu>
+        <Grid>
+            
+        </Grid>
+    </DockPanel>
 </Window>
