@@ -4,12 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using SQLite;
 
 namespace Notes_App.Model_Creating_Classes_
 {
+    
     public class User_HomePage:INotifyPropertyChanged
     {
+       
         private int id;
+        [PrimaryKey, AutoIncrement]
         public int Id
         {
             get { return id; }
@@ -21,6 +25,7 @@ namespace Notes_App.Model_Creating_Classes_
         }
 
         private string name;
+        [MaxLength(50)]
         public string Name
         {
             get { return name; }
@@ -31,6 +36,7 @@ namespace Notes_App.Model_Creating_Classes_
             }
         }
         private string lastname;
+        [MaxLength(50)]
         public string Lastname
         {
             get { return lastname;}

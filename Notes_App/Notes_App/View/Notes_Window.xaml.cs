@@ -10,19 +10,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Notes_App
+namespace Notes_App.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Notes_Window.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Notes_Window : Window
     {
-        public MainWindow()
+        public Notes_Window()
         {
             InitializeComponent();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            //shut down application
+            Application.Current.Shutdown();
         }
     }
 }
