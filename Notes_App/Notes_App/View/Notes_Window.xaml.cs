@@ -29,5 +29,10 @@ namespace Notes_App.View
             //shut down application
             Application.Current.Shutdown();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

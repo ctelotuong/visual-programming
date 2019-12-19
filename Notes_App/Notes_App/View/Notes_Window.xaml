@@ -16,15 +16,31 @@
                 <MenuItem Header="New Notebook"
                           Command="{Binding New_Notebook_Command}"/>
                 <MenuItem Header="New Note"
+                          
                           Command="{Binding New_Note_Command}"
+                          
                           CommandParameter="{Binding Selected_Notebook}"/>
                 <Separator/>
                 <MenuItem Header="Exit"
                           Click="MenuItem_Click"/>
             </MenuItem>
         </Menu>
-        <Grid>
+        <ListView Width="140"
+                  DockPanel.Dock="Left"
+                  ItemsSource="{Binding Notebook_class}">
             
-        </Grid>
+        </ListView>
+        <ListView Width="140"
+                  DockPanel.Dock="Left">
+            
+        </ListView>
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>
+                <Button Content="Speech"
+                        Click="Button_Click"/>
+            </ToolBar>
+                
+        </ToolBarTray>
+        <Grid/>
     </DockPanel>
 </Window>
