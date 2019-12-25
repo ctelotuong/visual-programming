@@ -1,0 +1,24 @@
+﻿2019-12-26 05:00:49> Program: Starting Squirrel Updater: --releasify NoteApp.1.0.0.nupkg
+2019-12-26 05:00:49> Program: Bootstrapper EXE found at:C:\Users\tuong\Desktop\NoteApps\NoteApps\packages\squirrel.windows.1.9.1\tools\Setup.exe
+2019-12-26 05:00:49> Program: Creating release package: C:\Users\tuong\Desktop\NoteApps\NoteApps\Releases\NoteApp.1.0.0.nupkg
+2019-12-26 05:00:49> ReleasePackage: Creating release package: C:\Users\tuong\Desktop\NoteApps\NoteApps\Releases\NoteApp.1.0.0.nupkg => C:\Users\tuong\Desktop\NoteApps\NoteApps\Releases\NoteApp-1.0.0-full.nupkg
+2019-12-26 05:00:50> ReleasePackage: Extracting dependent packages: []
+2019-12-26 05:00:50> ReleasePackage: Removing unnecessary data
+2019-12-26 05:00:50> ReleasePackage: No release notes found in C:\Users\tuong\AppData\Local\SquirrelTemp\tempa\NoteApp.nuspec
+2019-12-26 05:00:51> Program: Building embedded zip file for Setup.exe
+2019-12-26 05:04:25> Program: Starting Squirrel Updater: --releasify NoteApp.1.0.0.nupkg
+2019-12-26 05:04:25> Program: Bootstrapper EXE found at:C:\Users\tuong\Desktop\NoteApps\NoteApps\packages\squirrel.windows.1.9.1\tools\Setup.exe
+2019-12-26 05:04:25> Program: Creating release package: C:\Users\tuong\Desktop\NoteApps\NoteApps\Releases\NoteApp.1.0.0.nupkg
+2019-12-26 05:04:25> ReleasePackage: Creating release package: C:\Users\tuong\Desktop\NoteApps\NoteApps\Releases\NoteApp.1.0.0.nupkg => C:\Users\tuong\Desktop\NoteApps\NoteApps\Releases\NoteApp-1.0.0-full.nupkg
+2019-12-26 05:04:26> ReleasePackage: Extracting dependent packages: []
+2019-12-26 05:04:26> ReleasePackage: Removing unnecessary data
+2019-12-26 05:04:26> ReleasePackage: No release notes found in C:\Users\tuong\AppData\Local\SquirrelTemp\tempa\NoteApp.nuspec
+2019-12-26 05:04:28> Program: Building embedded zip file for Setup.exe
+2019-12-26 05:22:24> Program: Starting Squirrel Updater: --releasify tuong.1.0.0.nupkg
+2019-12-26 05:22:24> Program: Bootstrapper EXE found at:C:\Users\tuong\Desktop\NoteApps\NoteApps\packages\squirrel.windows.1.9.1\tools\Setup.exe
+2019-12-26 05:22:24> Program: Creating release package: C:\Users\tuong\Desktop\NoteApps\NoteApps\Releases\tuong.1.0.0.nupkg
+2019-12-26 05:22:24> ReleasePackage: Creating release package: C:\Users\tuong\Desktop\NoteApps\NoteApps\Releases\tuong.1.0.0.nupkg => C:\Users\tuong\Desktop\NoteApps\NoteApps\Releases\tuong-1.0.0-full.nupkg
+2019-12-26 05:22:26> ReleasePackage: Extracting dependent packages: []
+2019-12-26 05:22:26> ReleasePackage: Removing unnecessary data
+2019-12-26 05:22:26> ReleasePackage: No release notes found in C:\Users\tuong\AppData\Local\SquirrelTemp\tempa\tuong.nuspec
+2019-12-26 05:22:27> Program: Building embedded zip file for Setup.exe
