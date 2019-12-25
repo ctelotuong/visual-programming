@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 namespace NoteApps.Model
 {
     public class Notebook : INotifyPropertyChanged
-    {
-        private int id;
+    { //đã check hết
+        private string id;
         [PrimaryKey, AutoIncrement]
-        public int Id
+        public string Id
         {
             get { return id; }
             set
@@ -22,10 +22,10 @@ namespace NoteApps.Model
             }
         }
 
-        private int userId;
+        private string userId;
         //userid là khoá phụ
         [Indexed]
-        public int UserId
+        public string UserId
         {
             get { return userId; }
             set

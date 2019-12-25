@@ -10,9 +10,10 @@ namespace NoteApps.Model
 {
     public class Note : INotifyPropertyChanged
     {
-        private int id;
+        //đã check hết
+        private string id;
         [PrimaryKey, AutoIncrement]
-        public int Id
+        public string Id
         {
             get { return id; }
             set
@@ -22,10 +23,10 @@ namespace NoteApps.Model
             }
         }
 
-        private int notebookId;
+        private string notebookId;
         //notebookid là khoá phụ 
         [Indexed]
-        public int NotebookId
+        public string NotebookId
         {
             get { return notebookId; }
             set

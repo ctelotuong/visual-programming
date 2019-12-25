@@ -10,7 +10,7 @@ namespace NoteApps.Model
 {
     public class User : INotifyPropertyChanged
     {
-        
+        //đã check hết
         private int id;
         //id là khoá chính và tự tăng 
         [PrimaryKey, AutoIncrement]

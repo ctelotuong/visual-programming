@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NoteApps.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,11 +18,32 @@ namespace NoteApps.View
     /// <summary>
     /// Interaction logic for LoginWindow.xaml
     /// </summary>
-    public partial class LoginWindow : Window
+    public partial class LoginWindow 
     {
+        //đã check hết
         public LoginWindow()
         {
             InitializeComponent();
+            LoginVM vm = new LoginVM();
+            containerGrid.DataContext = vm;
+            vm.HasLogIn += Vm_HasLogIn;
+        }
+
+        private void Vm_HasLogIn(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void haveAccountButton_Click(object sender, RoutedEventArgs e)
+        {
+            RegisterStackPannel.Visibility = Visibility.Collapsed;
+            loginStackPannel.Visibility = Visibility.Visible;
+        }
+
+        private void noAccountButton_Click(object sender, RoutedEventArgs e)
+        {
+            RegisterStackPannel.Visibility = Visibility.Visible;
+            loginStackPannel.Visibility = Visibility.Collapsed;
         }
     }
 }

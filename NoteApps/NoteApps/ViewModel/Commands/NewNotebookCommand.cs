@@ -9,6 +9,7 @@ namespace NoteApps.ViewModel.Commands
 {
     public class NewNotebookCommand : ICommand
     {
+        //đã check hết
         public NoteVM VM { get; set; }
         public event EventHandler CanExecuteChanged;
         public NewNotebookCommand(NoteVM vm)
